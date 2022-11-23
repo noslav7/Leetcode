@@ -1,7 +1,5 @@
 package algorythms;
 
-import java.util.Arrays;
-
 public class RemoveElement {
     public int removeElement(int[] nums, int val) {
         int insertIndex = 0;
