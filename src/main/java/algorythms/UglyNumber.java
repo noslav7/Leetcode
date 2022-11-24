@@ -1,7 +1,7 @@
 package algorythms;
 
 public class UglyNumber {
-    public boolean isUgly(int n) {
+    public static boolean isUgly(int n) {
         while (n != 1) {
             if (n % 2 == 0) {
                 n /= 2;
