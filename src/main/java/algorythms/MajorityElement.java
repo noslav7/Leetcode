@@ -12,7 +12,6 @@ public class MajorityElement {
                 }
             }
             if (count > majorityCount) {
-                majorityCount = count;
                 majorityElement = nums[i];
             }
         }
