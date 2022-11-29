@@ -1,22 +1,26 @@
 package algorythms;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class HappyNumber {
-    public static boolean isHappy(int n) {
-        int sumSquares = 0;
-        int count = 0;
-        while (sumSquares != 1) {
-            sumSquares = 0;
-            count++;
-            if (count == 1000) {
-                break;
-            }
-            while (n != 0) {
-                int lastDigit = n % 10;
-                sumSquares = sumSquares + lastDigit * lastDigit;
-                n /= 10;
-            }
-            n = sumSquares;
+
+    private int getNext(int number) {
+        int squaresSum = 0;
+        while (number > 0) {
+            int lastDigit = number % 10;
+            number /= 10;
+            squaresSum += lastDigit * lastDigit;
         }
-        return count != 1000;
+        return squaresSum;
+    }
+
+    public boolean isHappy(int number) {
+        Set<Integer> seen = new HashSet<>();
+        while (number != 1 && !seen.contains(number)) {
+            seen.add(number);
+            number = getNext(number);
+        }
+        return number == 1;
     }
 }
