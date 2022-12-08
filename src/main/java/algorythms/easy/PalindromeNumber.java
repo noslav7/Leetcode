@@ -1,4 +1,4 @@
-package algorythms;
+package algorythms.easy;
 
 public class PalindromeNumber {
     public boolean isPalindrome(int x) {

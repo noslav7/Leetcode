@@ -1,4 +1,4 @@
-package algorythms.binary_tree_inorder_traversal;
+package algorythms.easy.binary_tree_inorder_traversal;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package algorythms;
+package algorythms.easy;
 
 public class UglyNumber {
     public static boolean isUgly(int n) {

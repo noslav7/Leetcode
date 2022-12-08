@@ -1,4 +1,4 @@
-package algorythms;
+package algorythms.easy;
 
 public class MajorityElement {
     public int majorityElement(int[] nums) {

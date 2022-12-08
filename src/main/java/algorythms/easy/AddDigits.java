@@ -1,4 +1,4 @@
-package algorythms;
+package algorythms.easy;
 
 public class AddDigits {
     public static int addDigits(int num) {
@@ -14,9 +14,5 @@ public class AddDigits {
         }
         System.out.println(num);
         return num;
-    }
-
-    public static void main(String[] args) {
-        addDigits(0);
     }
 }

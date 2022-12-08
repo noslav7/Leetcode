@@ -1,4 +1,4 @@
-package algorythms;
+package algorythms.easy;
 
 class MyQueueUsingStacks {
 /*

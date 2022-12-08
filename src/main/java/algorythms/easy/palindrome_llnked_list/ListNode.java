@@ -1,4 +1,4 @@
-package algorythms.palindrome_llnked_list;
+package algorythms.easy.palindrome_llnked_list;
 
 public class ListNode {
     int val;

@@ -1,7 +1,6 @@
-package algorythms.palindrome_llnked_list;
+package algorythms.easy.palindrome_llnked_list;
 
 import java.util.ArrayList;
-import java.util.Collection;
 
 public class PalindromeLinkedList {
     public boolean isPalindrome(ListNode head) {

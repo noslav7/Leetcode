@@ -1,4 +1,4 @@
-package algorythms;
+package algorythms.easy;
 
 public class RemoveDuplicatesFromSortedArray {
     public int removeDuplicates(int[] nums) {
