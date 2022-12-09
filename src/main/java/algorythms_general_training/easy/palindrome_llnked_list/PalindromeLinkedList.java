@@ -1,4 +1,4 @@
-package algorythms.easy.palindrome_llnked_list;
+package algorythms_general_training.easy.palindrome_llnked_list;
 
 import java.util.ArrayList;
 

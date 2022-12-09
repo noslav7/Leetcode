@@ -1,4 +1,4 @@
-package algorythms.easy.binary_tree_inorder_traversal;
+package algorythms_general_training.easy.binary_tree_inorder_traversal;
 
 public class TreeNode {
     int val;

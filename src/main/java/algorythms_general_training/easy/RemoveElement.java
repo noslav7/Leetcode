@@ -1,4 +1,4 @@
-package algorythms.easy;
+package algorythms_general_training.easy;
 
 public class RemoveElement {
     public int removeElement(int[] nums, int val) {

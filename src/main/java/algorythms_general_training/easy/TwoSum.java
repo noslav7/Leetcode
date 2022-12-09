@@ -1,4 +1,4 @@
-package algorythms.easy;
+package algorythms_general_training.easy;
 
 public class TwoSum {
     public int[] twoSum(int[] nums, int target) {

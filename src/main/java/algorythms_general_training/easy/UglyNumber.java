@@ -1,19 +1,21 @@
-package algorythms.easy;
+package algorythms_general_training.easy;
 
 public class UglyNumber {
     public static boolean isUgly(int n) {
-        while (n != 1) {
-            if (n % 2 == 0) {
-                n /= 2;
-            } else if (n % 3 == 0) {
-                n /= 3;
-            } else if (n % 5 == 0) {
-                n /= 5;
-            } else {
-                return false;
-            }
+        if (n <= 0) {
+            return false;
         }
-        return true;
+        for (int factor : new int[]{2, 3, 5}) {
+            n = keepDividingWhenDivisible(n, factor);
+        }
+        return n == 1;
+    }
+
+    private static int keepDividingWhenDivisible(int dividend, int divisor) {
+        while (dividend % divisor == 0) {
+            dividend /= divisor;
+        }
+        return dividend;
     }
 }
 
