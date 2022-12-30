@@ -1,4 +1,4 @@
-package algorythms_general_training.medium.add_two_numbers;
+package algorythms_general_training.medium;
 
 public class LongestPalindromicSubstring {
     public static String longestPalindrome(String s) {
