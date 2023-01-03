@@ -1,7 +1,7 @@
 package algorythms_general_training.easy;
 
 public class LongestPalindrome {
-    public int longestPalindrome(String s) {
+    public static int longestPalindrome(String s) {
         int[] count = new int[128];
         for (char c : s.toCharArray()) {
                 count[c]++;
