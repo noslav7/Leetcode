@@ -1,7 +1,7 @@
 package algorythms_general_training.easy;
 
 public class PalindromeNumber {
-    public boolean isPalindrome(int x) {
+    public static boolean isPalindrome(int x) {
         int remainder, sum = 0, temp;
         temp = x;
 
