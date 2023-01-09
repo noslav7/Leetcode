@@ -1,4 +1,4 @@
-package algorythms_general_training;
+package algorythms_general_training.easy;
 
 import java.util.List;
 
