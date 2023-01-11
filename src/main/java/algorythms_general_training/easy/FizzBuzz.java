@@ -1,22 +1,28 @@
 package algorythms_general_training.easy;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class FizzBuzz {
     public List<String> fizzBuzz(int n) {
-        String[] answer = new String[n];
-        for (int i = 0; i < answer.length; i++) {
-            if ((i + 1) % 3 == 0 && ((i + 1) % 5 == 0)) {
-                answer[i] = "FizzBuzz";
-            } else if ((i + 1) % 3 == 0) {
-                answer[i] = "Fizz";
-            } else if (((i + 1) % 5 == 0)) {
-                answer[i] = "Buzz";
+        List<String> ans = new ArrayList<String>();
+
+        for (int num = 1; num <= n; num++) {
+
+            boolean divisibleBy3 = (num % 3 == 0);
+            boolean divisibleBy5 = (num % 5 == 0);
+
+            if (divisibleBy3 && divisibleBy5) {
+                ans.add("FizzBuzz");
+            } else if (divisibleBy3) {
+                ans.add("Fizz");
+            } else if (divisibleBy5) {
+                ans.add("Buzz");
             } else {
-                answer[i] = Integer.toString(i + 1);
+                ans.add(Integer.toString(num));
             }
         }
-      return List.of(answer);
+        return ans;
     }
 }
 
